@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="borderPane" fx:id="mainBorderPane" prefHeight="683.0" prefWidth="758.0" stylesheets="@mainWin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <top>
+      <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar id="menuBar" fx:id="menuBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="336.0" stylesheets="@mainWin.css" HBox.hgrow="ALWAYS">
+               <menus>
+                  <Menu fx:id="menuMenu" disable="true" mnemonicParsing="false" text="Menu">
+                     <items>
+                        <MenuItem fx:id="menuItemStudent" mnemonicParsing="false" onAction="#openStudent" text="Student" />
+                        <MenuItem fx:id="menuItemHomework" mnemonicParsing="false" onAction="#openHomework" text="Homework" />
+                        <MenuItem fx:id="menuItemGrade" mnemonicParsing="false" onAction="#openGrades" text="Grade" />
+                        <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="statisticsMenu" disable="true" mnemonicParsing="false" text="Statistics">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openStatistics" text="Statistics for Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#openHallOfFame" text="Hall Of Fame" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openHowTo" text="How to use it" />
+                        <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="anchorPane1" layoutX="271.0" layoutY="249.0" prefHeight="188.0" prefWidth="613.0">
+               <children>
+                  <TextField id="textFieldCaptcha" fx:id="capchaField" layoutX="161.0" layoutY="104.0" prefHeight="31.0" prefWidth="240.0" />
+                  <TextField id="textFieldUser" fx:id="userField" layoutX="161.0" layoutY="2.0" prefHeight="31.0" prefWidth="240.0" />
+                  <PasswordField id="textFieldPassword" fx:id="passwordField" layoutX="161.0" layoutY="53.0" prefHeight="32.0" prefWidth="240.0" />
+                  <Label id="labelPassword" layoutX="57.0" layoutY="52.0" prefHeight="35.0" prefWidth="89.0" text="password:" textAlignment="RIGHT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button id="btnLogin" fx:id="loginBtn" layoutX="316.0" layoutY="152.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="23.0" prefWidth="85.0" text="LOGIN" />
+                  <Button id="btnReloadCapcha" fx:id="reloadBtn" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="148.0" mnemonicParsing="false" onAction="#reloadBtn" prefHeight="40.0" prefWidth="40.0" />
+                  <CheckBox id="checkbtnRobot" fx:id="checkBoxRobot" layoutX="161.0" layoutY="157.0" mnemonicParsing="false" text="I'm not a robot" />
+                  <Label id="labelCaptcha" fx:id="labelCaptcha" layoutY="102.0" prefHeight="35.0" prefWidth="148.0" textAlignment="RIGHT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelUser" layoutX="95.0" prefHeight="35.0" prefWidth="48.0" text="user:" textAlignment="RIGHT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelErrUser" fx:id="labelErrUser" layoutX="417.0" layoutY="1.0" text="wrong user" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelErrPassw" fx:id="labelErrPassw" layoutX="417.0" layoutY="56.0" text="wrong password" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelErrCaptcha" fx:id="labelErrCaptcha" layoutX="416.0" layoutY="109.0" text="wrong captcha" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelErrRobot" fx:id="labelErrRobot" layoutX="416.0" layoutY="157.0" text="unchecked &quot;I'm not a robot&quot;" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPane2" prefHeight="700.0" prefWidth="1000.0" visible="false">
+               <children>
+                  <HBox layoutX="14.0" layoutY="14.0" prefHeight="683.0" prefWidth="983.0" spacing="3.0">
+                     <children>
+                        <Button id="buttonStudent" fx:id="buttonStudent2ndWin" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openStudent" prefHeight="680.0" prefWidth="325.0" text="Students" textFill="WHITE" />
+                        <Button id="buttonHomework" fx:id="buttonHomework2ndWin" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#openHomework" prefHeight="680.0" prefWidth="321.0" text="Homeworks" />
+                        <Button id="buttonGrades" fx:id="buttonGrade2ndWin" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#openGrades" prefHeight="680.0" prefWidth="325.0" text="Grades" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<class>
+     <student id="1">
+          <name>Paul</name>
+          <group>222</group>
+          <email>paul@gmail.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="2">
+          <name>Tobias</name>
+          <group>222</group>
+          <email>loree@mail.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="3">
+          <name>Nicu</name>
+          <group>222</group>
+          <email>nic@mail.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="4">
+          <name>Andreea</name>
+          <group>222</group>
+          <email>andr3a@mail.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="5">
+          <name>Alex</name>
+          <group>222</group>
+          <email>alexx@mail.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="6">
+          <name>Iustin</name>
+          <group>224</group>
+          <email>iustin@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="9">
+          <name>Ion</name>
+          <group>226</group>
+          <email>ion@mail.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="10">
+          <name>Maria</name>
+          <group>224</group>
+          <email>maria@mariamail.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="11">
+          <name>Alexandra</name>
+          <group>212</group>
+          <email>ale@ms.com</email>
+          <professor>Popescu</professor>
+     </student>
+     <student id="12">
+          <name>Otniel</name>
+          <group>322</group>
+          <email>oti@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="13">
+          <name>Bogdan</name>
+          <group>222</group>
+          <email>bg@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="14">
+          <name>Ema</name>
+          <group>223</group>
+          <email>ema@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="15">
+          <name>Carmen</name>
+          <group>224</group>
+          <email>car@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="16">
+          <name>Emilia</name>
+          <group>224</group>
+          <email>emilia@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="17">
+          <name>Daniel</name>
+          <group>225</group>
+          <email>dani@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="18">
+          <name>Gabi</name>
+          <group>226</group>
+          <email>gaba@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="19">
+          <name>Flaviu</name>
+          <group>227</group>
+          <email>flav@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="20">
+          <name>Madalina</name>
+          <group>222</group>
+          <email>mada@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="21">
+          <name>Beniamin</name>
+          <group>227</group>
+          <email>benii@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="22">
+          <name>David</name>
+          <group>226</group>
+          <email>david@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="23">
+          <name>Andrei</name>
+          <group>226</group>
+          <email>andrei@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="24">
+          <name>Emilia</name>
+          <group>226</group>
+          <email>emilia@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="25">
+          <name>Remalia</name>
+          <group>222</group>
+          <email>remalia@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="26">
+          <name>Cristian</name>
+          <group>221</group>
+          <email>cristi@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="27">
+          <name>Emanuel</name>
+          <group>221</group>
+          <email>eman@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="28">
+          <name>Rares</name>
+          <group>221</group>
+          <email>rares@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="29">
+          <name>Alexandru</name>
+          <group>221</group>
+          <email>alex@yahoo.com</email>
+          <professor>Patricia</professor>
+     </student>
+     <student id="30">
+          <name>Mircea</name>
+          <group>226</group>
+          <email>mircea@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="31">
+          <name>Lorena</name>
+          <group>222</group>
+          <email>lidia@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="32">
+          <name>Elisei</name>
+          <group>225</group>
+          <email>elisei@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="33">
+          <name>Sabina</name>
+          <group>225</group>
+          <email>sabina@yahoo.com</email>
+          <professor>Popescu</professor>
+     </student>
+     <student id="34">
+          <name>Camelia</name>
+          <group>225</group>
+          <email>camelia@yahoo.com</email>
+          <professor>Popescu</professor>
+     </student>
+     <student id="35">
+          <name>Darius</name>
+          <group>224</group>
+          <email>darius@yahoo.com</email>
+          <professor>Sofia</professor>
+     </student>
+     <student id="36">
+          <name>Serban</name>
+          <group>226</group>
+          <email>serban@yahoo.com</email>
+          <professor>Paul</professor>
+     </student>
+     <student id="37">
+          <name>Robert</name>
+          <group>234</group>
+          <email>robert@gmail.com</email>
+          <professor>Paul</professor>
+     </student>
+</class>

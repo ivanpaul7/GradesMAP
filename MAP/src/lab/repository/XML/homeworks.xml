@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<class>
+     <homework id="1">
+          <description>Task manager Java</description>
+          <deadline>3</deadline>
+     </homework>
+     <homework id="2">
+          <description>Student management Java</description>
+          <deadline>4</deadline>
+     </homework>
+     <homework id="3">
+          <description>Student and Homework management Java</description>
+          <deadline>5</deadline>
+     </homework>
+     <homework id="4">
+          <description>Grades management Java</description>
+          <deadline>6</deadline>
+     </homework>
+     <homework id="5">
+          <description>Filter and Sorter Java</description>
+          <deadline>7</deadline>
+     </homework>
+     <homework id="6">
+          <description>GUI javafx Java</description>
+          <deadline>8</deadline>
+     </homework>
+     <homework id="7">
+          <description>GUI javafx +SceneBuider Java</description>
+          <deadline>10</deadline>
+     </homework>
+     <homework id="8">
+          <description>GUI javafx  +SceneBuider +mail (udp, tcp etc) + databases + security(login, captcha etc) Java</description>
+          <deadline>12</deadline>
+     </homework>
+     <homework id="9">
+          <description>Write your project in C# (c#)</description>
+          <deadline>14</deadline>
+     </homework>
+     <homework id="10">
+          <description>Project (optional)</description>
+          <deadline>14</deadline>
+     </homework>
+</class>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@homework.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.homework.ControllerHomework">
+   <children>
+      <AnchorPane fx:id="AnchorPaneTable" layoutX="14.0" layoutY="14.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="627.0" prefWidth="549.0" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="63.0" text="id" />
+                  <TableColumn fx:id="description" prefWidth="393.0" text="description" />
+                <TableColumn fx:id="deadline" prefWidth="74.0" text="deadline" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button id="buttonAdd" fx:id="btnAdd" layoutX="607.0" layoutY="289.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="83.0" text="Add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label id="labelId" layoutX="665.0" layoutY="67.0" text="id:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelDeadline" layoutX="624.0" layoutY="108.0" text="deadline:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelDescription" layoutX="604.0" layoutY="149.0" text="description:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="704.0" layoutY="64.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="deadlineField" layoutX="704.0" layoutY="105.0" prefHeight="31.0" prefWidth="233.0" />
+      <Button id="buttonDelete" fx:id="btnDelete" layoutX="684.0" layoutY="289.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="83.0" text="Delete" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="buttonClearAll" fx:id="btnClearAll" layoutX="854.0" layoutY="289.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="31.0" prefWidth="83.0" text="ClearAll">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="buttonUpdate" fx:id="btnUpdate" layoutX="705.0" layoutY="289.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="132.0" text="Update Deadline">
+         <font>
+            <Font name="Algerian" size="15.0" />
+         </font>
+      </Button>
+      <ImageView id="imageView" fx:id="imageView" fitHeight="250.0" fitWidth="350.0" layoutX="604.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="buttonFilter" fx:id="btnFilter" layoutX="685.0" layoutY="349.0" mnemonicParsing="false" onAction="#filter" prefHeight="31.0" prefWidth="188.0" text="Filter by checked fields">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="checkId" layoutX="944.0" layoutY="69.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkDeadline" layoutX="944.0" layoutY="110.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkDescription" layoutX="944.0" layoutY="151.0" mnemonicParsing="false" />
+      <TextArea fx:id="textAreaDescript" layoutX="705.0" layoutY="149.0" prefHeight="126.0" prefWidth="233.0" />
+   </children>
+</AnchorPane>

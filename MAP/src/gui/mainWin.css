@@ -1,0 +1,106 @@
+#menuBar {
+    -fx-background-color: linear-gradient(#494C58, #3E3F43);
+}
+
+.menu .label{     -fx-text-fill: #EAEAEA;}
+
+.menu-item{
+    -fx-background-color: #3E3F43;
+    -fx-border-color: #3E3F43;
+    -fx-border-width: 0;
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+.root .context-menu{
+    -fx-background-color: #3E3F43;
+}
+.menu-item:hover{
+    -fx-background-color: #69757A;
+}
+
+.root{
+-fx-background-color: #2D2E32;
+    -fx-background-image: url("image.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    /*
+    -fx-font-size: 12px;
+    -fx-background-insets: 0 0 0 0, 0, 4, 4;
+    -fx-border-color: linear-gradient(transparent, #32739B);
+    */
+}
+
+#btnReloadCapcha {
+    /* border-radius: 50px;*/
+    -fx-background-image: url("utils/reloadBtn.png");
+    -fx-background-size: cover;
+    -fx-background-radius:20;
+}
+
+#btnLogin{
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(#131313, #524e4e);
+    -fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -fx-text-fill: white;
+}
+
+#checkbtnRobot{
+    -fx-text-fill: #EAEAEA;
+}
+#labelCaptcha{
+    -fx-text-fill: #EAEAEA;
+}
+#labelUser{
+    -fx-text-fill: #EAEAEA;
+}
+#labelPassword{
+    -fx-text-fill:#EAEAEA;
+}
+
+#labelErrUser{
+    -fx-text-fill: red;
+}
+#labelErrPassw{
+    -fx-text-fill:red;
+}
+#labelErrRobot{
+    -fx-text-fill: red;
+}
+#labelErrCaptcha{
+    -fx-text-fill: red;
+}
+#buttonStudent{
+    -fx-background-image: url("./utils/student.jpeg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-border-width: 0pt;
+    -fx-text-fill: antiquewhite;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-size: 45px;
+    -fx-padding: 10;
+}
+#buttonGrades{
+    -fx-background-image: url("./utils/grades.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 465%;
+    -fx-border-width: 0pt;
+    -fx-text-fill: antiquewhite;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-size: 45px;
+}
+#buttonHomework{
+    -fx-background-image: url("./utils/homework.jpeg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto;
+    -fx-border-width: 0pt;
+    -fx-text-fill: antiquewhite;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-size: 45px;
+}

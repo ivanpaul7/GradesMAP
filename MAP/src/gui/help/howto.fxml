@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"  stylesheets="@howto.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text id="text1" fx:id="text1" layoutX="46.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Login&#10;
+1. Insert user name into user field&#10;
+2. Insert password into password field&#10;
+3. Calculate the captcha in order to prove you are not a robot&#10;
+4. Check the 'I'm not a robot' check box&#10;
+5. Press the button 'Login'&#10; "
+
+            wrappingWidth="534.6708984375" />
+   </children>
+</AnchorPane>

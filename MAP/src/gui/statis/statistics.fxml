@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@statistics.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.statis.ControllerStatistics">
+   <children>
+      <AnchorPane fx:id="AnchorPaneWrap" layoutX="24.0" layoutY="32.0" prefHeight="626.0" prefWidth="985.0">
+         <children>
+            <AnchorPane id="AnchorPaneStat" layoutX="12.0" layoutY="2.0" prefHeight="424.0" prefWidth="584.0" />
+             <TableView fx:id="tableView" layoutX="12.0" layoutY="452.0" prefHeight="174.0" prefWidth="596.0">
+                 <columns>
+                     <TableColumn fx:id="description" prefWidth="488.0" text="description" />
+                     <TableColumn fx:id="deadline" prefWidth="88.0" text="deadline" />
+                 </columns>
+             </TableView>
+            <PieChart fx:id="pieChart" layoutX="596.0" layoutY="2.0" prefHeight="286.0" prefWidth="389.0" />
+            <BarChart fx:id="barCharStudDelivery" prefHeight="433.0" prefWidth="596.0">
+              <xAxis>
+                <CategoryAxis endMargin="100.0" prefHeight="26.0" prefWidth="417.0" side="BOTTOM" startMargin="0.0" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="\\number of students" prefHeight="359.0" prefWidth="53.0" side="LEFT" tickLabelFill="#f56a07" />
+              </yAxis>
+            </BarChart>
+            <Label layoutX="136.0" layoutY="403.0" text="\\%of homeworks done" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="648.0" layoutY="396.0" prefHeight="296.0" prefWidth="348.0">
+         <children>
+            <Button id="btnSaveToPDF" layoutX="235.0" layoutY="176.0" mnemonicParsing="false" onAction="#updateTableWithStudent" text="Search" />
+            <TextField fx:id="txtFieldSt" layoutX="14.0" layoutY="175.0" onInputMethodTextChanged="#updateTableWithStudent" onKeyPressed="#updateTableWithStudent" onKeyReleased="#updateTableWithStudent" onKeyTyped="#updateTableWithStudent" prefHeight="31.0" prefWidth="195.0" />
+            <Button id="btnSaveToPDF" layoutX="235.0" layoutY="253.0" mnemonicParsing="false" onAction="#saveToPDF" text="SaveToPDF" />
+            <Label id="labelSt" layoutX="14.0" layoutY="85.0" text="Find undone homeworks" />
+            <Label id="labelSt" layoutX="14.0" layoutY="133.0" text="Student id/name:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

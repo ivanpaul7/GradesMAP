@@ -1,0 +1,13 @@
+Modificare nota  GradeDTO2{ nameStudent='Robesadsaadsasrt', nr tema:=9, deadline=14, value=10, currentWeek=-37, observation='edsgsgddsgs'}
+Modificare nota  GradeDTO2{ nameStudent='rrrrr', nr tema:=9, deadline=14, value=10, currentWeek=-37, observation='reer'}
+Modificare nota  GradeDTO2{ nameStudent='rrrrrrrrrr', nr tema:=9, deadline=14, value=10, currentWeek=-37, observation='254'}
+Modificare nota  GradeDTO2{ nameStudent='rrrrrrrrrr', nr tema:=9, deadline=14, value=9, currentWeek=-37, observation='9'}
+Modificare nota  GradeDTO2{ nameStudent='Robert4004', nr tema:=9, deadline=14, value=9, currentWeek=-37, observation='9'}
+Modificare nota  GradeDTO2{ nameStudent='Robdfdsdsfdsert', nr tema:=9, deadline=14, value=9, currentWeek=-37, observation='9'}
+Modificare nota  GradeDTO2{ nameStudent='dsdsfeafaf', nr tema:=9, deadline=14, value=9, currentWeek=-37, observation='9'}
+Modificare nota  GradeDTO2{ nameStudent='Robe40440rt', nr tema:=9, deadline=14, value=9, currentWeek=-37, observation='9'}
+Modificare nota  GradeDTO2{ nameStudent='404040', nr tema:=4, deadline=6, value=4, currentWeek=-37, observation='4'}
+Modificare nota  GradeDTO2{ nameStudent='404040', nr tema:=9, deadline=14, value=9, currentWeek=-37, observation='9'}
+Modificare nota  GradeDTO2{ nameStudent='444', nr tema:=4, deadline=6, value=4, currentWeek=-37, observation='4'}
+Modificare nota  GradeDTO2{ nameStudent='gssgeg', nr tema:=4, deadline=6, value=4, currentWeek=-37, observation='4'}
+Modificare nota  GradeDTO2{ nameStudent='4040404', nr tema:=4, deadline=6, value=4, currentWeek=-37, observation='4'}

@@ -1,0 +1,9 @@
+1|homework1|1
+2|homework2|2
+3|homework3|3
+4|homework4|4
+5|homework5|5
+6|homework6|6
+7|homework7|8
+8|GUI javafx +SceneBuider|14
+9|GUI javafx  +SceneBuider +mail (udp, tcp etc) + databases + security(login, captcha etc)|14

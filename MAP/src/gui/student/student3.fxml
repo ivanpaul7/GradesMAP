@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@student.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.student.ControllerStudent">
+   <children>
+      <AnchorPane fx:id="AnchorPaneTable" layoutX="14.0" layoutY="14.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="627.0" prefWidth="549.0" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="63.0" text="id" />
+                  <TableColumn fx:id="name" prefWidth="162.0" text="name" />
+                <TableColumn fx:id="group" prefWidth="57.0" text="group" />
+                  <TableColumn fx:id="email" prefWidth="121.0" text="email" />
+                  <TableColumn fx:id="professor" minWidth="0.0" prefWidth="126.0" text="professor" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button id="buttonAdd" fx:id="btnAdd" layoutX="582.0" layoutY="289.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="83.0" text="Add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label id="labelId" layoutX="665.0" layoutY="67.0" text="id:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelName" layoutX="642.0" layoutY="108.0" text="name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelGroup" layoutX="640.0" layoutY="149.0" text="group:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelProfessor" layoutX="612.0" layoutY="229.0" text="professor:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelEmail" layoutX="642.0" layoutY="189.0" text="email:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="704.0" layoutY="64.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="nameField" layoutX="704.0" layoutY="105.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="groupField" layoutX="704.0" layoutY="146.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="emailField" layoutX="704.0" layoutY="186.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="profField" layoutX="704.0" layoutY="226.0" prefHeight="31.0" prefWidth="233.0" />
+      <Button id="buttonDelete" fx:id="btnDelete" layoutX="684.0" layoutY="289.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="83.0" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="buttonClearAll" fx:id="btnClearAll" layoutX="896.0" layoutY="289.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="31.0" prefWidth="83.0" text="ClearAll">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="buttonUpdate" fx:id="btnUpdate" layoutX="790.0" layoutY="289.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="83.0" text="Update">
+         <font>
+            <Font name="Alien Encounters" size="15.0" />
+         </font>
+      </Button>
+      <ImageView id="imageView" fx:id="imageView" fitHeight="250.0" fitWidth="350.0" layoutX="604.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="buttonFilter" fx:id="btnFilter" layoutX="685.0" layoutY="349.0" mnemonicParsing="false" onAction="#filter" prefHeight="31.0" prefWidth="188.0" text="Filter by checked fields">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="checkId" layoutX="944.0" layoutY="69.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkName" layoutX="944.0" layoutY="110.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkGroup" layoutX="944.0" layoutY="151.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkEmail" layoutX="944.0" layoutY="191.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkProf" layoutX="944.0" layoutY="231.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>

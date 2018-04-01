@@ -1,0 +1,7 @@
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=4, deadline=6, value=10, currentWeek=-37, observation='Good Job!'}
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=5, deadline=7, value=10, currentWeek=-37, observation='Good Job!'}
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=6, deadline=8, value=10, currentWeek=-37, observation='Good Job!'}
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=7, deadline=10, value=10, currentWeek=-37, observation='Good Job!'}
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=8, deadline=12, value=10, currentWeek=-37, observation='Good Job!'}
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=9, deadline=14, value=10, currentWeek=-37, observation='Good Job!'}
+Modificare nota  GradeDTO2{ nameStudent='Madalina', nr tema:=10, deadline=14, value=10, currentWeek=-37, observation='Good Job!'}

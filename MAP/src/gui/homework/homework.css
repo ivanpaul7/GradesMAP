@@ -1,0 +1,114 @@
+
+
+#labelId{
+    -fx-text-fill: #EAEAEA;
+}
+#labelDeadline{
+    -fx-text-fill: #EAEAEA;
+}
+#labelDescription{
+    -fx-text-fill: #EAEAEA;
+}
+
+
+#buttonAdd{
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(#131313, #524e4e);
+    -fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+#buttonDelete{
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(#131313, #524e4e);
+    -fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+#buttonUpdate{
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(#131313, #524e4e);
+    -fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+#buttonClearAll{
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(#131313, #524e4e);
+    -fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+#buttonFilter{
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(#131313, #524e4e);
+    -fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+#imageView{
+    -fx-image: url("./homework.jpg");
+}
+
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-view .filler{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #524e4e;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.tableView > .virtual-flow > .scroll-bar:vertical,
+.tableView > .virtual-flow > .scroll-bar:vertical > .track,
+.tableView > .virtual-flow > .scroll-bar:vertical > .track-background,
+.tableView > .virtual-flow > .scroll-bar:horizontal,
+.tableView > .virtual-flow > .scroll-bar:horizontal > .track,
+.tableView > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}

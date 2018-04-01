@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@grade.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.grade.ControllerGrade">
+   <children>
+      <AnchorPane fx:id="AnchorPaneTable" layoutX="14.0" layoutY="14.0" prefHeight="675.0" prefWidth="549.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="627.0" prefWidth="549.0" tableMenuButtonVisible="true">
+              <columns>
+                  <TableColumn fx:id="idStudent" prefWidth="32.0" text="ID Student" visible="false" />
+                <TableColumn fx:id="idHomework" prefWidth="46.0" text="ID homework" visible="false" />
+                  <TableColumn fx:id="nameStd" prefWidth="116.0" text="Name Student" />
+                  <TableColumn fx:id="groupStudent" editable="false" prefWidth="32.0" text="Group" visible="false" />
+                  <TableColumn fx:id="descriptionHmk" prefWidth="262.0" text="Description Homework" />
+                  <TableColumn fx:id="value" onEditCommit="#changeValueCellEvent" prefWidth="74.0" text="grade's value" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneNormalMode" layoutX="587.0" layoutY="70.0" prefHeight="325.0" prefWidth="398.0">
+         <children>
+            <Label id="labelValue" layoutX="9.0" layoutY="95.0" text="grade's Value:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button id="buttonFilter" fx:id="btnFilter" layoutX="98.0" layoutY="294.0" mnemonicParsing="false" onAction="#filter" prefHeight="31.0" prefWidth="188.0" text="Filter by checked fields">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label id="labelObs" layoutX="43.0" layoutY="168.0" prefHeight="25.0" prefWidth="73.0" text="Remarks:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button id="buttonClearAll" fx:id="btnClearAll" layoutX="254.0" layoutY="248.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="31.0" prefWidth="83.0" text="ClearAll">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="checkValue" layoutX="370.0" layoutY="97.0" mnemonicParsing="false" />
+            <TextField fx:id="idSField" layoutX="126.0" prefHeight="31.0" prefWidth="233.0" />
+            <TextField fx:id="valueField" layoutX="126.0" layoutY="92.0" prefHeight="31.0" prefWidth="233.0" />
+            <Label id="labelIDH" layoutX="8.0" layoutY="40.0" text="ID/description">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label id="labelIDS" layoutX="-11.0" layoutY="3.0" text="ID/name Student">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="checkIdHomework" layoutX="370.0" layoutY="51.0" mnemonicParsing="false" />
+            <TextArea fx:id="textArea" layoutX="126.0" layoutY="138.0" prefHeight="84.0" prefWidth="233.0" />
+            <CheckBox fx:id="checkIdStudent" layoutX="370.0" layoutY="5.0" mnemonicParsing="false" />
+            <Button id="buttonAdd" fx:id="btnAdd" layoutX="62.0" layoutY="248.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="83.0" text="Add">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button id="buttonUpdate" fx:id="btnUpdate" layoutX="159.0" layoutY="248.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="83.0" text="Update">
+               <font>
+                  <Font name="Algerian" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="idHField" layoutX="126.0" layoutY="47.0" prefHeight="31.0" prefWidth="233.0" />
+            <Label id="labelIDH" layoutX="21.0" layoutY="61.0" text="Homework">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView id="imageView" fx:id="imageView" fitHeight="250.0" fitWidth="350.0" layoutX="604.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" />
+      <ToggleButton id="buttonNormalSeries" fx:id="btnToggleNormal" layoutX="676.0" layoutY="27.0" mnemonicParsing="false" onAction="#gradeModeAdd" text="Normal Add" />
+      <ToggleButton id="buttonSeriesSeries" fx:id="btnToggleSeries" layoutX="797.0" layoutY="27.0" mnemonicParsing="false" onAction="#gradeModeAdd" text="Series Add" />
+      <AnchorPane fx:id="anchorPaneSeriesMode" layoutX="568.0" layoutY="65.0" prefHeight="345.0" prefWidth="420.0" visible="false" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="568.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="65.0">
+         <children>
+            <Label id="labelDescriptionHmkS" layoutX="20.0" layoutY="84.0" text="Homework's description" />
+            <ComboBox id="comboDescriptionS" fx:id="comboHomeworkSeries" layoutX="14.0" layoutY="124.0" onAction="#updateTableAddSeries" prefHeight="31.0" prefWidth="149.0" />
+            <ComboBox id="comboGradeS" fx:id="comboGroupSeries" layoutX="20.0" layoutY="231.0" onAction="#updateTableAddSeries" prefHeight="31.0" prefWidth="149.0" />
+            <Label id="labelGroupS" layoutX="20.0" layoutY="200.0" text="Student's group" />
+            <Button id="buttonAddSeries" layoutX="297.0" layoutY="269.0" mnemonicParsing="false" onAction="#addSeries" prefHeight="31.0" prefWidth="62.0" text="Add" />
+            <Label id="labelDescriptionHmkS" layoutX="20.0" layoutY="24.0" text="Filter by:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
